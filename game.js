@@ -91,7 +91,7 @@ cvs.addEventListener("click", function(evt){
 const bg = {
     sX : 0,
     sY : 0,
-    w : 275,
+    w : 275,  
     h : 226,
     x : 0,
     y : cvs.height - 226,
@@ -174,7 +174,7 @@ const bird = {
         this.frame = this.frame%this.animation.length;
         
         if(state.current == state.getReady){
-            this.y = 150; // RESET POSITION OF THE BIRD AFTER GAME OVER
+            this.y = 152; // RESET POSITION OF THE BIRD AFTER GAME OVER
             this.rotation = 0 * DEGREE;
         }else{
             this.speed += this.gravity;
